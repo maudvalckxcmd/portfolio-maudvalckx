@@ -1,99 +1,121 @@
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
-img {
-  max-width: 100%;
-  height: auto;
+body { 
+    color:black; 
+    font-family:sans-serif; 
+    display: grid;
+    grid-template-columns: 24vw 25vw 25vw 24vw ;
+    grid-template-rows: 4vw 1vw 38vw 1vw 15vw 15vw;
 }
 
-body{
-    display:grid;
-    grid-template-columns:29vw 42vw 30vw;
-    grid-template-rows: 28vw 6vw 22vw 10vw 25vw auto;
-    background-image: url("img/cursedgrassbackground.webp");
+#balk {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
 }
 
-#titel {
-    background-color: red;
-    grid-column: 2;
-    grid-row: 1/2;
-    width: 100%
-    
+#grootplaatje {
+    background-color:black;
+    background-image: url("grootplaatjeimage.png");
+    background-position: center;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
 }
 
-
-#banner1 {
-    grid-column: 1/4;
-    grid-row: 2/2;
-    background-image: url("img/kirbybanner.png");
-    background-size: contain;
-
-} 
-
-
-
-#tekst1 {
-background-color:rgb(255, 0, 128);
-    grid-column: 1/3;
-    grid-row: 3/3;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size:large;
-    color:rgb(0, 0, 0);
-
+#oranje {
+    background-color:#f60;
+    background-image: url("oranjeimg.png");
+    text-align:top;
+    grid-column: 1 / 2;
+    grid-row: 5 / 7;
+  border: 2px white;
+  border-radius: 30px;
+  padding: 12px;
+  margin: 2px;
 }
 
-
-#afbeelding1 {
-grid-column: 3/4;
-grid-row: 3/3;
+#zwart {
+    background-color:black;
+    color: white;
+    text-align: top;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  border: 2px white;
+  border-radius: 30px;
+  padding: 12px;
+  margin: 2px;
+  img{
+    padding-left:125px;
+    padding-right:10px;
+  }
 }
 
-
-#middentekst {
-background-color: rgb(250, 16, 16);
-grid-column: 2/3;
-grid-row: 4/4;
-font-family: "Comic Sans MS", "Comic Sans", cursive;
-font-size:x-large;
-color:rgb(0, 0, 0);
-text-align:center;
-
+#lichtblauw {
+    background-color:#b5edff;
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+  border: 2px;
+  border-radius: 30px;
+  padding: 12px;
+  margin: 2px;
+  img{
+    padding-left:80px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+  }
 }
 
-
-#tekst2 {
-background-color: rgb(255, 238, 0);
-grid-column:1/2;
-grid-row: 5/5;
-text-align: center;
-font-family: "Comic Sans MS", "Comic Sans", cursive;
-color:rgb(26, 5, 255);
-
+#roze {
+    background-color:#ffbacf;
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+  border: 2px white;
+  border-radius: 30px;
+  padding: 12px;
+  margin: 2px;
+  img{
+    padding-left:70px;
+    padding-right:30px;
+  }
 }
 
-#tekst3 {
-background: rgb(29, 241, 5);
-background-size:contain;
-grid-column: 2/3;
-grid-row: 5/5;
-text-align: center;
-font-family: "Comic Sans MS", "Comic Sans", cursive;
-color: rgb(255, 238, 0);
+#bruin {
+    background-color:#bea079;
+    grid-column: 3 / 4;
+    grid-row: 6 / 7; 
+  border: 2px white;
+  border-radius: 30px;
+  padding: 12px;
+  margin: 2px;
+  img{
+    padding-left: 80px;
+    padding-right: 20px;
+  }
 }
 
-#tekst4 {
-background-color: rgb(26, 5, 255);
-grid-column: 3/4;
-grid-row: 5/5;
-text-align: center;
-font-family: "Comic Sans MS", "Comic Sans", cursive;
-color:rgb(29, 241, 5);
+#donkerblauw {
+    background-color:#00b6de;
+    grid-column: 4 / 5;
+    grid-row: 5 / 6; 
+  border: 2px white;
+  border-radius: 30px;
+  padding: 12px;
+  margin: 2px;
+  img{
+    padding-left: 60px;
+    padding-right: 30px;
+  }
+}
+
+#donkeroranje {
+    background-color:#ff4d00;
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+  border: 2px white;
+  text-align: left;
+  border-radius: 30px;
+  padding:12px;
+  margin:2px;
+ img{
+  padding-left: 90px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+ }
 }
